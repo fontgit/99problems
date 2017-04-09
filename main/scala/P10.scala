@@ -7,10 +7,11 @@
   * res0: List[(Int, Symbol)] = List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
   */
 object P10 extends App {
+
   import P09.pack
 
   def encode[T](l: List[T]): List[(Int, T)] = {
-    pack(l).map(ls => (ls.size,ls.head))
+    pack(l).map(ls => (ls.size, ls.head))
   }
 
   println(encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
