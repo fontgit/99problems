@@ -8,7 +8,7 @@ object P16 extends App {
   def drop[T](n: Int, xs: List[T]): List[T] =
     xs.zipWithIndex.flatMap {
       case (_, i) if (i + 1) % n == 0 => Nil
-      case (e , _ ) => List(e)
+      case (e, _) => List(e)
     }
 
   def dropWithFor[T](n: Int, xs: List[T]): List[T] =
@@ -19,6 +19,5 @@ object P16 extends App {
 
   println(drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
   println(dropWithFor(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
-
-	println('testing')
+  println("message")
 }
