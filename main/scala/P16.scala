@@ -19,5 +19,6 @@ object P16 extends App {
 
   println(drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
   println(dropWithFor(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
-  println("message")
+
+println("message")
 }
