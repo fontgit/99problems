@@ -7,5 +7,4 @@
   */
 object P17 extends App {
 
-  println(split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
 }
